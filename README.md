@@ -1,40 +1,75 @@
-# epicodus | PHP week one | independent project | 9.11.16
+***
+___
+######
+## **P H P** / / **independent project** / / **9** . **11** . **16**
+ _by_  _**K y l e   F i s h e r**_  
+**********
+***
+### //  **description**
+###### > **>** **A program that saves user provided contact information into a manageable, easily navigated, and highly visible address book.**
+###
+___
 
-#### Epicodus | 09.08.16
-###### _By **Kyle Fisher**_
+### // **setup & installation requirements**
 
-## **//** Description
+###### **1** > **>** **Navigate to the directory in which you want the addressBookPHP project to reside .**
+##
+###### **2** > **>** **Enter the following command into your terminal** :
+        _git clone https://github.com/FisherKyle/AnagramChecker.git_
+#####
+######  **3** > **>** **Navigate to the titleCase directory, and execute the following command in the terminal** :
+          _composer install_
+#####
+######  **4** > **>** **Navigate to the web directory and start your local host by executing the following command in your terminal** :
+          _php -S localhost:8000_
 
-PHP-based address book application
+######  **5** > **>** **Open up the browser of your choice and go to the following url** :
+          _http://localhost:8000/_
 
-## **//** Installation Requirements/Instructions
-1. First, ensure PHP is properly installed by following the instructions found @ https://www.learnhowtoprogram.com/php/getting-started-with-php/installing-php-4b2cf877-24e6-469a-89cb-68032e96da3a
-2. Clone the repository found @ https://github.com/FisherKyle/AddressBook.git
-3. Navigate to localhost:8000 in your browser to access the application.
+######  **6** > **>**  **If you wish to look at the source code, feel free to browse through the files in the titleCase directory .**
+###
+___
+### // **specs**
 
-## **//** Support and contact details
+###### > **>** **User creates a new contact entry by entering information into displayed form fields. The user will provide a name, number, and e-mail address by replacing the prompts within each field. Additionally, entries can be deleted by clicking the appropriately labeled button.**
+###
+* ##### **sample** > **>**  _form fields left blank_
+#
+>  **[** e n t e r  : n a m e **] + [**  e n t e r : p h o n e - n u m b e r  **] + [** e n t e r :  e m a i l   **]**
+* ##### **sample** > **>** _form fields completed_
+#
+> **[** john dohl **] + [** 6095555925 **] + [** _dohlermeister @ yahoo. net_ **]**
+* ##### **sample** > **>**  *i n p u t* : user clicks > **>** **[** *: : clear form : :* **]**
+* ##### **sample** > **>**  *o u t p u t* :  message > **>** **[** "contacts : : _**cleared**_  " **]**
 
-Contact kyle@kylefisher.com for more information.
+####
+___
 
-## **//** Technologies Used
+### // ~~**known bugs**~~
+#
+___
+### // **support and contact**
+####
+###### > **>** **Please feel free to contact me through the github account or at** *kyle@kylefisher.com* .
+###
+___
+### // **technologies used**
+* ######  _PHP_
+* ######  _CSS_
+* ######  _HTML_
+* ###### _silex v~2.0_
+* ###### _twig v~1.24.1_
+* ###### _bootstrap v3.3.7_
+####
+___
+#### // **license**
 
-* HTML
-* Bootstrap
-* PHP
-* silex
-* twig
-
-#### **//** **Specifications**
-**___________________________________________________________**
-
-Description:
-  * _example input:_
-  * _example output:_
-Description:
-  * _example input:_
-  * _example output:_ 
+* ###### _GPLV3_
+####
+___
+___
+> _A d d r e s s  B o o k  // C o p y r i g h t  //  (**c**) 2016   //  K y l e   F i s h e r_
 
 
-### License
-
-Copyright (c) 2016 **kyle fisher // kylefisher.com**
+___
+___
