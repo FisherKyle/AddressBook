@@ -2,7 +2,7 @@
 ___
 ######
 ## **P H P** / / **independent project** / / **9** . **11** . **16**
- _by_  _**K y l e   F i s h e r**_  
+ _by_ : _**K y l e   F i s h e r**_  
 **********
 ***
 ### //  **description**
@@ -33,14 +33,14 @@ ___
 
 ###### > **>** **User creates a new contact entry by entering information into displayed form fields. The user will provide a name, number, and e-mail address by replacing the prompts within each field. Additionally, entries can be deleted by clicking the appropriately labeled button.**
 ###
-* ##### **sample** > **>**  _form fields left blank_
+*  **sample** > **>**  _form fields left blank_
 #
 >  **[** e n t e r  : n a m e **] + [**  e n t e r : p h o n e - n u m b e r  **] + [** e n t e r :  e m a i l   **]**
-* ##### **sample** > **>** _form fields completed_
+*  **sample** > **>** _form fields completed_
 #
 > **[** john dohl **] + [** 6095555925 **] + [** _dohlermeister @ yahoo. net_ **]**
-* ##### **sample** > **>**  *i n p u t* : user clicks > **>** **[** *: : clear form : :* **]**
-* ##### **sample** > **>**  *o u t p u t* :  message > **>** **[** "contacts : : _**cleared**_  " **]**
+*  **sample** > **>**  *i n p u t* : user clicks > **>** **[** *: : clear form : :* **]**
+*  **sample** > **>**  *o u t p u t* :  message > **>** **[** "contacts : : _**cleared**_  " **]**
 
 ####
 ___
@@ -54,19 +54,19 @@ ___
 ###
 ___
 ### // **technologies used**
-* ######  _PHP_
-* ######  _CSS_
-* ######  _HTML_
-* ###### _silex v~2.0_
-* ###### _twig v~1.24.1_
-* ###### _bootstrap v3.3.7_
+####
+*   _PHP_
+*   _CSS_
+*   _HTML_
+*  _silex v~2.0_
+*  _twig v~1.24.1_
+*  _bootstrap v3.3.7_
 ####
 ___
-#### // **license**
+### // **license**
 
 * ###### _GPLV3_
 ####
-___
 ___
 > _A d d r e s s  B o o k  // C o p y r i g h t  //  (**c**) 2016   //  K y l e   F i s h e r_
 
