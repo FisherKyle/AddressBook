@@ -4,27 +4,41 @@
     class Contact {
 
         private $phone;
-        private $first_name;
-        private $last_name;
+        private $name;
         private $email;
 
 // -----:: Object : constructor ::--------------------------------------------->
 
-        function __construct($phone, $first_name, $last_name, $email) {
+        function __construct($phone, $name, $email) {
 
-            $this->phone = $phone;
-            $this->first_name = $first_name;
-            $this->last_name = $last_name;
-            $this->email = $email;
+            $this->contact_phone = $phone;
+            $this->contact_name = $name;
+            $this->contact_email = $email;
 
         }
 
         function getContactPhone() {
-          return $this->$phone;
+          return $this->$contact_phone;
         }
 
         function setContactPhone() {
-          $this->$phone = $
+          $this->$contact_phone = (string) $phone;
+        }
+
+        function getContactName() {
+          return $this->$contact_name;
+        }
+
+        function setContactName() {
+          $this->$contact_name = (string) $name;
+        }
+
+        function getContactEmail() {
+          return $this->$contact_email;
+        }
+
+        function setContactEmail() {
+          $this->$contact_email = (string) $email;
         }
 
 ?>
