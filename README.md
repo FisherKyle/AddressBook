@@ -35,12 +35,12 @@ ___
 ###
 *  **sample** > **>**  _form fields left blank_
 #
->  **[** e n t e r  : n a m e **] + [**  e n t e r : p h o n e - n u m b e r  **] + [** e n t e r :  e m a i l   **]**
+>  **[** enter name **]  [**  enter phone number  **]  [** enter email **]**
 *  **sample** > **>** _form fields completed_
 #
-> **[** john dohl **] + [** 6095555925 **] + [** _dohlermeister @ yahoo. net_ **]**
-*  **sample** > **>**  *i n p u t* : user clicks > **>** **[** *: : clear form : :* **]**
-*  **sample** > **>**  *o u t p u t* :  message > **>** **[** "contacts : : _**cleared**_  " **]**
+> **[** john dohl **]  [** 6095555925 **]  [** _dohlermeister@yahoo.net_ **]**
+*  **sample** > **>**  *input* : user clicks > **>** **[** *: : clear form : :* **]**
+*  **sample** > **>**  *output* :  message > **>** **[** "contacts : : _**cleared**_  " **]**
 
 ####
 ___
