@@ -3,9 +3,9 @@
 // -----:: class Object : contact ::------------------------------------------->
     class Contact {
 
-        private $phone;
-        private $name;
-        private $email;
+        private $contact_phone;
+        private $contact_name;
+        private $contact_email;
 
 // -----:: Object : constructor ::--------------------------------------------->
 
@@ -17,29 +17,35 @@
 
         }
 
-        function getContactPhone() {
-          return $this->$contact_phone;
+// G E T // S E T //
+
+        function setContactName($name) {
+          $this->$contact_name = (string) $name;
         }
 
-        function setContactPhone() {
+        function setContactPhone($phone) {
           $this->$contact_phone = (string) $phone;
+        }
+
+        function getContactPhone() {
+          return $this->$contact_phone;
         }
 
         function getContactName() {
           return $this->$contact_name;
         }
 
-        function setContactName() {
-          $this->$contact_name = (string) $name;
-        }
-
         function getContactEmail() {
           return $this->$contact_email;
         }
 
-        function setContactEmail() {
+        function setContactEmail($email) {
           $this->$contact_email = (string) $email;
         }
+
+        // function newContact(
+        //   $this->"$contact_email"
+        // )
 
         function save() {
             array_push($_SESSION["list_of_contacts"], $this);

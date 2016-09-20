@@ -15,15 +15,13 @@
 
     $app->get("/", function() use ($app) {
 
-          return $app["twig"]->render("contacts_home.html.twig", array("list_of_contacts" => Contact::getAll()));
-
+          return $app["twig"]->render("contacts_home.html.twig", array("contacts" => Contact::getAll()));
     });
 
-// end : setup //
+// -----: contacts : add :-----//
 
-// -----: contacts : add :--------------------------------------------------->
-$app->post("/contacts_add", function() use ($app) {
-    $contact = new Contact($_POST["phone"], $_POST["name"], $_POST["email"]); // -> remember this is POST next time
+$app->post('/contacts_add', function() use ($app) {
+    $contact = new Contact($_POST["contact_name"], $_POST["contact_phone"], $_POST["contact_email"]); 
     $contact->save();
 
     return $app["twig"]->render("contacts_add.html.twig", array("new_contact" => $contact));

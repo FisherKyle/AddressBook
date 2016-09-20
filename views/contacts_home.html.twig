@@ -3,55 +3,56 @@
     <head>
         <meta charset="utf-8">
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
-        <link href="/css/styles.css" rel="stylesheet" type="text/css">
+        <link href="/../css/styles.css" rel="stylesheet" type="text/css">
         <title>contacts > home</title>
     </head>
 
     <body>
         <div class="container">
-            <h4>contacts > directory</h4>
-                <div class="row">
-                    <div class="col-sm-10">
-                        <h1> <strong>/ /</strong> </h1> 
+            <h3>contacts // directory</h3>
 
-<!-- //-----:: contact : all input forms ::-------------------------------->
+            <div class="row">
+                <div class="col-sm-10">
+
+                    {% if contacts is not empty %}
+
+                        <ul>
+                            {% for new_contact in contacts %}
+
+                                <ul>
+                                    <li>{{name.getContactName}}</li>
+                                    <li>number // {{contact.getPhone}}</li>
+                                    <li>email // {{email.getEmail}}</li>
+                                </ul>
+
+                            {% endfor %}
+                        </ul>
+
+                    {% endif %}
+
+                    <form action='/contacts_add' method='post'>
+
                         <div class="form-group">
                             <label for="contact_name"> contact : name </label>
                             <input id="contact_name" name="contact_name" type="text" class="form-control" placeholder="n a m e" required>
                         </div>
+
                         <div class="form-group">
                             <label for="contact_phone"> contact : number </label>
                             <input id="contact_phone" name="contact_phone" maxlength="11" type="number" class="form-control" placeholder="p h o n e" required>
                         </div>
+
                         <div class="form-group">
                             <label for="contact_email"> contact : email </label>
                             <input id="contact_email" name="contact_email" type="text" class="form-control" placeholder="e m a i l" required>
+                        </div>
 
-                        <form action="/contacts_add" method="get">
-                            <button type="submit" class="btn btn-success"> back </button>
-                        </form>
+                        <button type="submit" class="btn btn-success" id="saveButton">contact > log//entry</button>
+                    </form>
 
-                        <form action="/contacts_delete" method="post">
-                            <button type="submit" class="btn btn-danger"><strong>contacts :: clear</strong></button>
-                        </form>
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                {% if list_of_contacts is not empty %}
-                                <h3>Contacts</h3>
-                                    {% for new_contact in list_of_contacts %}
-                                        <p> {{new_contact.getLastName}}, {{new_contact.getFirstName}} </p>
-                                    {% endfor %}
-                                    <br>
-                                    <form action="/delete_contacts" method="post">
-                                        <button type="submit" class="btn btn-warning">clear : all contacts</button>
-                                    </form>
-                                {% endif %}
-                            </div>
-                    </div>
-
-                    </div>
-                </div>
+                    <form action="/contacts_delete" method="post" id="clearButton">
+                        <button type="submit" class="btn btn-danger">contact > clear//all</button>
+                    </form>
         </div>
     </body>
 </html>
