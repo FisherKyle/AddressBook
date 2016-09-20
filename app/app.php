@@ -13,23 +13,15 @@
     $app->register(new Silex\Provider\TwigServiceProvider(),array('twig.path' => __DIR__.'/../views'
     ));
 
-    //
-    // if (date_default_timezone_get()) {
-    // echo 'date_default_timezone_set: ' . date_default_timezone_get() . '<br />';
-    // }
-    //
-    // if (ini_get('date.timezone')) {
-    //     echo 'date.timezone: ' . ini_get('date.timezone');
-    // }
-
     $app->get("/", function() use ($app) {
 
           return $app["twig"]->render("contacts_home.html.twig", array("list_of_contacts" => Contact::getAll()));
 
     });
-// -----:: end : required :  ::------------------------------------------------>
 
-// -----:: contacts : add ::--------------------------------------------------->
+// end : setup //
+
+// -----: contacts : add :--------------------------------------------------->
 $app->post("/contacts_add", function() use ($app) {
     $contact = new Contact($_POST["phone"], $_POST["name"], $_POST["email"]); // -> remember this is POST next time
     $contact->save();
