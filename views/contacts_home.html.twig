@@ -11,18 +11,16 @@
         <div class="container">
             <h3>contacts // directory</h3>
 
-            <div class="row">
-                <div class="col-sm-10">
-
                     {% if contacts is not empty %}
+                    <h4>As follows:</h4>
 
                         <ul>
-                            {% for new_contact in contacts %}
+                            {% for contact in contacts %}
 
                                 <ul>
-                                    <li>{{name.getContactName}}</li>
-                                    <li>number // {{contact.getPhone}}</li>
-                                    <li>email // {{email.getEmail}}</li>
+                                    <strong><li>name >>{{contact.getContactName}}</li></strong>
+                                    <li>number >>{{contact.getContactPhone}}</li>
+                                    <li>email >>{{contact.getContactEmail}}</li>
                                 </ul>
 
                             {% endfor %}
@@ -47,7 +45,7 @@
                             <input id="contact_email" name="contact_email" type="text" class="form-control" placeholder="e m a i l" required>
                         </div>
 
-                        <button type="submit" class="btn btn-success" id="saveButton">contact > log//entry</button>
+                        <button type='submit' class="btn btn-success" id="saveButton">contact > log//entry</button>
                     </form>
 
                     <form action="/contacts_delete" method="post" id="clearButton">
